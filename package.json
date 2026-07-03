@@ -1,0 +1,28 @@
+{
+  "name": "rr-rsc-spa",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "react-router dev",
+    "build": "react-router build",
+    "start": "node server.mjs",
+    "test": "npm run build && playwright test",
+    "typecheck": "react-router typegen && tsc"
+  },
+  "dependencies": {
+    "@remix-run/node-fetch-server": "^0.14.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-router": "^8.1.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "~1.56.0",
+    "@react-router/dev": "^8.1.0",
+    "@types/node": "^24.5.2",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-rsc": "~0.5.27",
+    "typescript": "^5.9.3",
+    "vite": "^8.1.3"
+  }
+}
